@@ -33,6 +33,7 @@ body {
   background-image: url('../img/textures/noise.png');
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 10rem;
   padding: 10rem;
   min-height: 100vh;
@@ -87,6 +88,7 @@ a {
 
 .section {
   max-width: 120rem;
+  width: 100%;
 }
 
 .introduction {
@@ -98,8 +100,17 @@ a {
 
 .vertical-line {
   min-width: 0.2rem;
+  max-width: 0.2rem;
   background-color: var(--color-purple-light);
   border-radius: 10rem;
+}
+
+.horizontal-line {
+  min-height: 0.2rem;
+  max-height: 0.2rem;
+  background-color: var(--color-purple-light);
+  border-radius: 10rem;
+  width: 100%;
 }
 
 .introduction-content {
@@ -129,9 +140,20 @@ a {
   gap: 1.5rem;
 }
 
+.section-header {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.section-header > h2 {
+  min-width: max-content;
+}
+
 @media screen and (max-width: 700px) {
   body {
     padding: 7.5rem;
+    gap: 7.5rem;
   }
   h1 {
     font-size: 5.5rem;
@@ -157,6 +179,7 @@ a {
 @media screen and (max-width: 500px) {
   body {
     padding: 5rem;
+    gap: 5rem;
   }
   h1 {
     font-size: 5rem;
