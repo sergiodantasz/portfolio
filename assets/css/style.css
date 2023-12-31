@@ -73,6 +73,18 @@ a {
   text-decoration: none;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
+.clr-purple-light {
+  color: var(--color-purple-light);
+}
+
+.clr-gray-lighter {
+  color: var(--color-gray-lighter);
+}
+
 .section {
   max-width: 120rem;
 }
@@ -115,15 +127,6 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.introduction-header h3 {
-  font-weight: 600;
-  color: var(--color-gray-lighter);
-}
-
-.introduction-footer p {
-  color: var(--color-purple-light);
 }
 
 @media screen and (max-width: 700px) {
