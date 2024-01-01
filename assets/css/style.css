@@ -230,10 +230,12 @@ a {
 
 .footer span {
   color: var(--color-gray-light);
+  width: fit-content;
 }
 
 .footer a {
   font-weight: 600;
+  width: fit-content;
 }
 
 .footer a:hover {
