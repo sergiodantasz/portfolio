@@ -86,6 +86,13 @@ a {
   gap: 6rem;
 }
 
+.subsection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
 .introduction {
   flex-direction: row;
   gap: 3rem;
@@ -212,6 +219,56 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.subsection-header {
+  color: var(--color-gray-lighter);
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.subsection-header > h3 {
+  min-width: max-content;
+}
+
+.subsection-header > .horizontal-line {
+  background-color: var(--color-gray-lighter);
+}
+
+.studies-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.study {
+  display: flex;
+  gap: 3rem;
+}
+
+.study-content p {
+  font-size: 2rem;
+}
+
+.study-content > .study-name {
+  font-weight: 500;
+}
+
+.study-content > .study-location {
+  color: var(--color-purple-light);
+}
+
+.study-content > .study-duration {
+  font-weight: 300;
+  color: var(--color-gray-light);
+  margin-top: 1.5rem;
+}
+
+.studies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .footer-content {
