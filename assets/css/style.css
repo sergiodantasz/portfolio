@@ -72,27 +72,19 @@ p {
 
 a {
   text-decoration: none;
-}
-
-.fw-600 {
-  font-weight: 600;
-}
-
-.clr-purple-light {
-  color: var(--color-purple-light);
-}
-
-.clr-gray-lighter {
-  color: var(--color-gray-lighter);
+  color: inherit;
 }
 
 .section {
   max-width: 120rem;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
 .introduction {
-  display: flex;
+  flex-direction: row;
   gap: 3rem;
   height: calc(100vh - 10rem - 5rem);
   min-height: 60rem;
@@ -150,54 +142,74 @@ a {
   min-width: max-content;
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    padding: 7.5rem;
-    gap: 7.5rem;
-  }
-  h1 {
-    font-size: 5.5rem;
-  }
-  h2 {
-    font-size: 3.5rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 1.9rem;
-  }
-  p {
-    font-size: 1.9rem;
-  }
-  .introduction-icon {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
+.who-am-i-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
 }
 
-@media screen and (max-width: 500px) {
-  body {
-    padding: 5rem;
-    gap: 5rem;
-  }
-  h1 {
-    font-size: 5rem;
-  }
-  h2 {
-    font-size: 3rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.4rem;
-  }
-  p {
-    font-size: 1.4rem;
-  }
-  .introduction-icon {
-    width: 4rem;
-    height: 4rem;
-  }
+.who-am-i-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.who-am-i-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.who-am-i-image-container {
+  flex: 1;
+  border: 0.5rem solid var(--color-purple-light);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.who-am-i-image-container > img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: max-content;
+}
+
+.footer span {
+  color: var(--color-gray-light);
+}
+
+.footer a {
+  font-weight: 600;
+}
+
+.footer a:hover {
+  color: var(--color-purple-light);
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.clr-purple-light {
+  color: var(--color-purple-light);
+}
+
+.clr-gray-lighter {
+  color: var(--color-gray-lighter);
+}
+
+.bg-clr-gray-light {
+  background-color: var(--color-gray-light);
 }
