@@ -271,6 +271,37 @@ a {
   gap: 3rem;
 }
 
+.contacts-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.contact {
+  display: flex;
+  gap: 1.5rem;
+  width: fit-content;
+  /* flex-wrap: wrap; */
+}
+
+.contact-info p {
+  color: var(--color-purple-light);
+  /* word-break: break-all; */
+}
+
+.contact:hover p {
+  color: var(--color-purple-lighter);
+}
+
+.contact:hover .contact-icon {
+  filter: brightness(0) saturate(100%) invert(83%) sepia(42%) saturate(2506%) hue-rotate(194deg) brightness(101%) contrast(98%);
+}
+
+.contact-icon {
+  width: 6rem;
+  height: 6rem;
+}
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
