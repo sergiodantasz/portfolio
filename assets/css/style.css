@@ -121,7 +121,7 @@ a {
 .introduction {
   flex-direction: row;
   gap: var(--medium-spacing);
-  height: calc(100vh - var(--bigger-spacing) - calc(var(--bigger-spacing) / 2));
+  height: calc(100svh - var(--bigger-spacing) - calc(var(--bigger-spacing) / 2));
 }
 
 .vertical-line {
