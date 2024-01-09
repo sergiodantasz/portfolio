@@ -107,7 +107,6 @@ a {
 .hidden {
   opacity: 0;
   filter: blur(2rem);
-  transition: var(--transition);
   transform: translateX(-100%);
 }
 
